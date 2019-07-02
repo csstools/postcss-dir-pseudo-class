@@ -100,7 +100,7 @@ export default postcss.plugin('postcss-dir-pseudo-class', opts => {
 								// insert dir attribute after html tag
 								selector.insertAfter(first, dirAttr);
 							} else if (shadow) {
-								// prepend dir attribute in :host-context()
+								// prepend :host-context([dir])
 								selector.prepend(hostContextPseudo);
 							} else {
 								// otherwise, prepend the dir attribute
