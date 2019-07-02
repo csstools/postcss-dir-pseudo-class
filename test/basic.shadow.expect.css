@@ -26,7 +26,7 @@
 	order: 6;
 }
 
-:host-context([dir="ltr"]):root * {
+[dir="ltr"]:root * {
 	order: 7;
 }
 
@@ -62,7 +62,7 @@ html[dir="ltr"] * {
 	order: 15;
 }
 
-:host-context([dir="rtl"]):root * {
+[dir="rtl"]:root * {
 	order: 16;
 }
 

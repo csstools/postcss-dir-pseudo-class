@@ -99,7 +99,7 @@ export default postcss.plugin('postcss-dir-pseudo-class', opts => {
 							} else if (firstIsHtml) {
 								// insert dir attribute after html tag
 								selector.insertAfter(first, dirAttr);
-							} else if (shadow) {
+							} else if (shadow && !firstIsRoot) {
 								// prepend :host-context([dir])
 								selector.prepend(hostContextPseudo);
 							} else {
