@@ -4,7 +4,7 @@ import selectorParser from 'postcss-selector-parser';
 export default postcss.plugin('postcss-dir-pseudo-class', opts => {
 	const dir = Object(opts).dir;
 	const preserve = Boolean(Object(opts).preserve);
-  const shadow = Boolean(Object(opts).shadow);
+	const shadow = Boolean(Object(opts).shadow);
 
 	return root => {
 		// walk rules using the :dir pseudo-class
@@ -67,11 +67,11 @@ export default postcss.plugin('postcss-dir-pseudo-class', opts => {
 								value:     `"${ value }"`
 							});
 
-              // :host-context([dir]) for Shadow DOM CSS
-              const hostContextPseudo = selectorParser.pseudo({
-                value: ':host-context'
-              });
-              hostContextPseudo.append(dirAttr);
+							// :host-context([dir]) for Shadow DOM CSS
+							const hostContextPseudo = selectorParser.pseudo({
+								value: ':host-context'
+							});
+							hostContextPseudo.append(dirAttr);
 
 							// not[dir] attribute
 							const notDirAttr = selectorParser.pseudo({
@@ -97,11 +97,11 @@ export default postcss.plugin('postcss-dir-pseudo-class', opts => {
 									selector.prepend(notDirAttr);
 								}
 							} else if (firstIsHtml) {
-                // insert dir attribute after html tag
-                selector.insertAfter(first, dirAttr);
-              } else if (shadow) {
-                // prepend dir attribute in :host-context()
-                selector.prepend(hostContextPseudo);
+								// insert dir attribute after html tag
+								selector.insertAfter(first, dirAttr);
+							} else if (shadow) {
+								// prepend dir attribute in :host-context()
+								selector.prepend(hostContextPseudo);
 							} else {
 								// otherwise, prepend the dir attribute
 								selector.prepend(dirAttr);

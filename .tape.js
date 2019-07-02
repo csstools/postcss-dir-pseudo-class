@@ -17,12 +17,12 @@ module.exports = {
 				preserve: true
 			}
 		},
-    'basic:shadow': {
-      message: 'support { shadow: true } usage',
-      source: 'basic.css',
-      options: {
-        shadow: true
-      }
-    }
+		'basic:shadow': {
+			message: 'support { shadow: true } usage',
+			source: 'basic.css',
+			options: {
+				shadow: true
+			}
+		}
 	}
 };
