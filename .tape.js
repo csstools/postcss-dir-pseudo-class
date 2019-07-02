@@ -16,6 +16,13 @@ module.exports = {
 			options: {
 				preserve: true
 			}
-		}
+		},
+    'basic:shadow': {
+      message: 'support { shadow: true } usage',
+      source: 'basic.css',
+      options: {
+        shadow: true
+      }
+    }
 	}
 };
