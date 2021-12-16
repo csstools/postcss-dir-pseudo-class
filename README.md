@@ -1,3 +1,6 @@
+<div align="center">⚠️ PostCSS Dir Pseudo Class was moved to <a href="https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-dir-pseudo-class">@csstools/postcss-plugins</a>. ⚠️ <br>
+<a href="https://github.com/csstools/postcss-plugins/discussions/75">Read the announcement</a></div>
+
 # PostCSS Dir Pseudo Class [<img src="https://postcss.github.io/postcss/logo.svg" alt="PostCSS Logo" width="90" height="90" align="right">][postcss]
 
 [![NPM Version][npm-img]][npm-url]
